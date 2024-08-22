@@ -1,0 +1,12 @@
+#mainNav {
+  position: sticky;
+  background-color: #ffffff;
+  padding: 6px 12px;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding: 5px 16px;
+  }
+}
+
