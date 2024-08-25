@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'pp-sans-small-bold';
+	src: url(../../assets/fonts/pp-sans-small-bold-830821aef1c617fa18046f08fdf88a38.eot) format('embedded-opentype'),
+	url(../../assets/fonts/pp-sans-small-bold-d0f3e56e30d17e349934b1920e3acf2c.woff) format('woff'),
+	url(../../assets/fonts/pp-sans-small-bold-40b2d443f5e1d7a01b8a086bc2d78a63.svg) format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+}

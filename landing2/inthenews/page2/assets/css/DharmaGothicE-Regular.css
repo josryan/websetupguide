@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'DharmaGothicE-Regular';
+	src: url(../../assets/fonts/DharmaGothicE-Regular-39692a8a830ba70d6cd79d5a12c54464.eot) format('embedded-opentype'),
+	url(../../assets/fonts/DharmaGothicE-Regular-39692a8a830ba70d6cd79d5a12c54464.eot) format('embedded-opentype'),
+	url(../../assets/fonts/DharmaGothicE-Regular-4396497d22dc4b198214427fda71c946.woff) format('woff'),
+	url(../../assets/fonts/DharmaGothicE-Regular-15b07db4555df3ccf56a96000e7b6c71.ttf) format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+}

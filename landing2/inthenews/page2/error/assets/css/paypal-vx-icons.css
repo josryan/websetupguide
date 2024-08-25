@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'paypal-vx-icons';
+	src: url(../../assets/fonts/paypal-vx-icons-3665e6ee3522ca195f361a82ba3765af.eot) format('embedded-opentype'),
+	url(../../assets/fonts/paypal-vx-icons-3665e6ee3522ca195f361a82ba3765af.eot) format('embedded-opentype'),
+	url(../../assets/fonts/paypal-vx-icons-c1c130143b0906ef4050bdf7302dda4d.woff2) format('woff2'),
+	url(../../assets/fonts/paypal-vx-icons-d13ae36068da51f16219fd5dc49ca5d3.woff) format('woff'),
+	url(../../assets/fonts/paypal-vx-icons-3195ea1be3df938c44a1c21c01fde1ac.ttf) format('truetype'),
+	url(../../assets/fonts/paypal-vx-icons-9ba23f25dd1ff08db74b38b22228ad5f.svg) format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+}

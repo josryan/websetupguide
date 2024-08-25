@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'ppf-utility';
+	src: url(../../assets/fonts/ppf-utility-4bf41ab613e5a57064d8e7e6405cdf7a.eot) format('embedded-opentype'),
+	url(../../assets/fonts/ppf-utility-4bf41ab613e5a57064d8e7e6405cdf7a.eot) format('embedded-opentype'),
+	url(../../assets/fonts/ppf-utility-94d1c7f317d1fa2aab5c9f91bc6f1b5d.woff) format('woff'),
+	url(../../assets/fonts/ppf-utility-581726f65446f4aba361cde0bb3b3633.ttf) format('truetype'),
+	url(../../assets/fonts/ppf-utility-be2aabe83f74332eac5ea49e283e9f6e.svg) format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+}

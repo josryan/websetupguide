@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'pp-sans-small-regular';
+	src: url(../../assets/fonts/pp-sans-small-regular-7fb44fadf817cc20ba10efb354b49cff.eot) format('embedded-opentype'),
+	url(../../assets/fonts/pp-sans-small-regular-7fb44fadf817cc20ba10efb354b49cff.eot) format('embedded-opentype'),
+	url(../../assets/fonts/pp-sans-small-regular-3bbc05d2f0018990aa395f236fbf1e95.woff) format('woff'),
+	url(../../assets/fonts/pp-sans-small-regular-1308bcba04927678e3cf0119648c6b80.svg) format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+}

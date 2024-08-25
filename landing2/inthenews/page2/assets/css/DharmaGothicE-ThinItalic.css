@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'DharmaGothicE-ThinItalic';
+	src: url(../../assets/fonts/DharmaGothicE-ThinItalic-2bf4f460d6f288ff765a00e2365fe67e.eot) format('embedded-opentype'),
+	url(../../assets/fonts/DharmaGothicE-ThinItalic-2bf4f460d6f288ff765a00e2365fe67e.eot) format('embedded-opentype'),
+	url(../../assets/fonts/DharmaGothicE-ThinItalic-61b4ee347ff12e8938fe7e3efc78be3a.woff) format('woff'),
+	url(../../assets/fonts/DharmaGothicE-ThinItalic-c84e1384769a4382e732778fd007416f.ttf) format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+}
