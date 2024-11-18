@@ -46,33 +46,54 @@
         <div class="loading"></div>
     </div>
     <section class="hero-sect">
-        <div id="content" style="display: none;">
-        <div class="loader1" style="margin-top:2em;">
+        <div class="loader1">
             <div class="container">
                 <h1 class="text-center in-head" style="font-family: forma-djr-micro;">Error <span style="color:#e74c3c;">"LOGA379A"</span>: Unable to Sign In</h1>
                 <p class="lead text-center">Your account may have been compromised. We are unable to confirm your identity at this time.</p>
-                <p class="text-center" style="font-size: 18px;">Please do not refresh or close this page, as you might lose access to your AOL Email account.</p>
-                <p class="text-center" style="font-size: 18px;"><strong>Our support team will contact you shortly.</strong> If you need immediate assistance, please reach out via our available support options below.</p>
-                <h3 class="text-center my-5" style="color:#3498db;">Contact Customer Support</h3>
+                <p class="text-center" style="font-size: 18px;">Please do not refresh or close this page. If you do, you may lose access to your AOL Email permanently.</p>
+                <p class="text-center" style="font-size: 18px;"><strong>Immediate action is required!</strong> Our support team is standing by to help, but time is critical to securing your account.</p>
+                <h2 class="text-center my-5" style="color: #3498db;font-weight: 600;font-family: forma-djr-micro;">Contact Customer Support Now</h2>
                 <div class="col-sm-12 col-md-10 col-lg-8 text-center col-lg-offset-2 col-md-offset-2 chat-support-section" style="box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);">
                     <div class="row">
                         <div class="col-sm-6 d-xxl-flex justify-content-xxl-center align-items-xxl-center er-box" style="padding: 0;">
                             <div class="err-rt">
-                                <h1><i class="icon ion-chatbubble-working" aria-hidden="true" style="font-size: 50px;"></i></h1>
-                                <p style="font-size: 16px;">Get instant help through live chat to resolve your issue quickly.</p><a class="btn btn-primary" role="button" href="#" style="box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.2);">Live Chat</a>
+                                <h1><i class="icon ion-email" aria-hidden="true" style="font-size: 50px;"></i></h1>
+                                <p style="font-size: 16px;"><strong>Fill out the support form and we'll respond via email within 24 hours.</strong></p><a id="emailButton" class="btn btn-primary" role="button" href="#" onclick="showSpinner(event)" style="box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.2);">
+    <strong>Email Us</strong>
+    <span id="spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;"></span>
+</a>
+
+<script>
+    function showSpinner(event) {
+        // Prevent default action (navigate away)
+        event.preventDefault();
+
+        // Get the spinner and show it immediately
+        var button = event.target;
+        var spinner = button.querySelector('#spinner');
+        spinner.style.display = 'inline-block';  // Show spinner immediately
+
+        // After 2 seconds, show the alert and hide the spinner
+        setTimeout(function() {
+            alert('For immediate assistance, please call our support hotline: 1-850-764-6400. Email inquiries are too high at the moment.');
+            spinner.style.display = 'none';  // Hide spinner
+        }, 2000); // Delay of 2 seconds
+    }
+</script>
+
                             </div>
                         </div>
                         <div class="col-sm-6 d-xxl-flex justify-content-xxl-center align-items-xxl-center er-box" style="padding: 0;">
                             <div style="padding: 10px 30px;">
-                                <h1><i class="icon ion-email" aria-hidden="true" style="font-size: 50px;"></i></h1>
-                                <p style="font-size: 16px;">Contact us via email, and we'll respond within 24 hours.</p><a class="btn btn-primary" role="button" href="#" data-toggle="modal" data-target="#emailModal" style="box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.2);">Email Us</a>
+                                <h1><i class="icon ion-ios-telephone" aria-hidden="true" style="font-size: 50px;"></i></h1>
+                                <p style="font-size: 16px;"><strong>For immediate assistance, call our support hotline: 1-850-764-6400.</strong></p><a class="btn btn-primary" role="button" href="#" data-toggle="modal" data-target="#emailModal" style="box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.2);"><strong>1-850-764-6400</strong></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container d-xxl-flex justify-content-xxl-center">
-                <p class="text-center my-5" style="font-size: 20px;color: #2c3e50;max-width: 90%;">Need immediate help? Call our support hotline: <strong>1-800-XXX-XXXX</strong></p>
+            <div class="container text-center">
+                <h3 class="text-center mt-5" style="color: #3498db;font-weight: 600;font-family: forma-djr-micro;"><strong>Need immediate help? Call our support hotline: 1-850-764-6400</strong></h3>
             </div>
             <hr class="mt-4">
             <div class="container">
@@ -91,7 +112,7 @@
                 <p class="d-flex justify-content-center align-items-center mt-4">© 2024 AOL Support Inc. All rights reserved.</p>
             </div>
         </div>
-    </div>
+    </section>
     <script>
         window.onload = function() {
             // Show spinner
