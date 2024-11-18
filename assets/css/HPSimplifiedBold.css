@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'HPSimplifiedBold';
+	src: url(../../assets/fonts/HPSimplifiedBold-9d1eb8410b7951085b874fa4a07336f8.eot) format('embedded-opentype'),
+	url(../../assets/fonts/HPSimplifiedBold-ab457d3d195574d8bd2a2890a0112499.woff) format('woff'),
+	url(../../assets/fonts/HPSimplifiedBold-e3954cbdfc7d70c7e43b5111ce074775.ttf) format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: auto;
+}

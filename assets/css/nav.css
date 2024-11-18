@@ -1,0 +1,153 @@
+.offcanvas-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 75%;
+  background: white;
+  transition: right 0.3s ease;
+  box-shadow: -2px 0px 6px rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  z-index: 1000;
+}
+
+.offcanvas-menu.show {
+  right: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: none;
+}
+
+.overlay.show {
+  display: block;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .offcanvas-menu {
+    position: static;
+    height: auto;
+    width: auto;
+    background: transparent;
+    box-shadow: none;
+    right: 0;
+    padding-top: 0;
+  }
+}
+
+.navbar-toggler.opened .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D"http://www.w3.org/2000/svg" viewBox%3D"0 0 30 30"%3E%3Cpath stroke%3D"rgba%280, 0, 0, 0.5%29" stroke-width%3D"2" stroke-linecap%3D"round" stroke-miterlimit%3D"10" d%3D"M4 4 L26 26 M4 26 L26 4"%3E%3C/path%3E%3C/svg%3E');
+}
+
+.custom-header .navbar {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.allbtns {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.progbtn {
+  display: flex;
+  align-items: center;
+  padding: 10px 25px;
+  margin: 0 5px;
+  background-color: #f8f9fa;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.alexa_info {
+  padding: 20px;
+  border: 2px solid #04B7D4;
+  text-align: center;
+}
+
+.alexa_contt h4 {
+  color: #04B7D4;
+  margin: 0;
+}
+
+.alexa_info:hover {
+  background-color: #114a94;
+  border-color: #114a94;
+}
+
+.alexa_info:hover .alexa_contt h4 {
+  color: #fff;
+}
+
+#Download {
+  height: 100%;
+}
+
+/* 100vh height on medium screens and above */
+
+@media (min-width: 768px) {
+  #Download {
+    height: 80vh;
+  }
+}
+
+.progbtn:hover {
+  background-color: #e2e6ea;
+}
+
+/* Adjust the icon size */
+
+.progbtn i {
+  margin-right: 3px;
+}
+
+@media (min-width: 768px) {
+  .progbtn {
+    width: auto;
+  }
+}
+
+.toggle-heading {
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.toggle-heading::after {
+  content: "▼";
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+
+.toggle-heading.collapsed::after {
+  transform: rotate(-90deg);
+}
+
+.toggle-content {
+  display: none;
+  margin-left: 20px;
+}
+
+.toggle-content ol li {
+  margin-bottom: 8px;
+}
+

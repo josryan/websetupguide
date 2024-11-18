@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'forma-djr-micro';
+	src: url(../../assets/fonts/forma-djr-micro-90f36043eb7052742457cc758d6b262c.woff2) format('woff2'),
+	url(../../assets/fonts/forma-djr-micro-06ebadfd55720095e2eaa7bc2fd7de8e.woff) format('woff');
+	font-weight: 200 800;
+	font-style: normal;
+	font-display: auto;
+}

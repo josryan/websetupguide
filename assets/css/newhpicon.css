@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'newhpicon';
+	src: url(../../assets/fonts/newhpicon-0ed46f0a63f66f04d057f389d7a0dcaa.eot) format('embedded-opentype'),
+	url(../../assets/fonts/newhpicon-ff52be540fdcfd584992422039497e46.ttf) format('truetype'),
+	url(../../assets/fonts/newhpicon-0ed46f0a63f66f04d057f389d7a0dcaa.eot) format('embedded-opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+}

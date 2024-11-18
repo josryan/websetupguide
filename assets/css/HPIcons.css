@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'HPIcons';
+	src: url(../../assets/fonts/HPIcons-1f68ef43473345135a03b829b9dc586a.svg) format('svg'),
+	url(../../assets/fonts/HPIcons-0958c13e2698095cc2d648cec7fc0269.eot) format('embedded-opentype'),
+	url(../../assets/fonts/HPIcons-0958c13e2698095cc2d648cec7fc0269.eot) format('embedded-opentype'),
+	url(../../assets/fonts/HPIcons-c10d276383f4a303ce009de28bebf5f4.woff) format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+}

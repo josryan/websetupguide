@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'header_icons';
+	src: url(../../assets/fonts/header_icons-af8d876007f0f10eb38719da46f01cf9.eot) format('embedded-opentype'),
+	url(../../assets/fonts/header_icons-971bcb1fa9a8c5af34d9b9b721f8210c.woff) format('woff'),
+	url(../../assets/fonts/header_icons-7ac869fa105e61c80e576b548b931fd8.ttf) format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+}

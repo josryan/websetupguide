@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'HPSimplified-Light';
+	src: url(../../assets/fonts/HPSimplified-Light-09b895be7c305ca2d038ffedc3b8031a.eot) format('embedded-opentype'),
+	url(../../assets/fonts/HPSimplified-Light-40179e63188d2bab0a6ec0a2914acfe7.woff) format('woff'),
+	url(../../assets/fonts/HPSimplified-Light-e706c10fd17220d459af24c0e60fba0e.ttf) format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: auto;
+}

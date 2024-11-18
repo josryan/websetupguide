@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'HPSimplifiedRegular';
+	src: url(../../assets/fonts/HPSimplifiedRegular-070e8fdfaaef313f469816c3b373ce3b.eot) format('embedded-opentype'),
+	url(../../assets/fonts/HPSimplifiedRegular-e4c0a854d05a828c5de8b9e76ccb39a4.woff) format('woff'),
+	url(../../assets/fonts/HPSimplifiedRegular-87974663a8d7ddac6692600d37292fba.ttf) format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+}

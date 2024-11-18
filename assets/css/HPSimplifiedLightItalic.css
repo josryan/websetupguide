@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'HPSimplifiedLightItalic';
+	src: url(../../assets/fonts/HPSimplifiedLightItalic-4a91d898ab066fd2a9ceea6580d868e7.eot) format('embedded-opentype'),
+	url(../../assets/fonts/HPSimplifiedLightItalic-c81e076d8a550d2aeb87f466d29f1994.woff) format('woff'),
+	url(../../assets/fonts/HPSimplifiedLightItalic-e63a2c1f7cbb5976bab4e134cd68e5e1.ttf) format('truetype');
+	font-weight: 300;
+	font-style: italic;
+	font-display: auto;
+}
